@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<<<<<<< HEAD
+<head>
+  <title>きりみん.me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta content="きりみん.me" name="title">
+  <meta content="きりみんは、主にAndroidアプリの開発をしているフリーのプログラマです。" name="description">
+  <meta content='きりみん,kirimin' name='keywords'>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="きりみん.me"/>
+  <meta property="og:description" content="きりみんは、主にAndroidアプリの開発をしているフリーのプログラマです。" />
+  <meta property="og:url" content="http://kirimin.me" />
+  <meta property="og:site_name" content="kirimin.me"/>
+
+  <link rel="stylesheet" href="kirimin.css">
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+
+  <script src="js/kirimin.js"></script>
+  <script src="js/kirimin.feed.js"></script>
+  <script>
+    $(function () { kirimin.initModule(); });
+  </script>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">きりみん.me</a></h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">とっぷ</a></li>
+      <li><a href="#links">りんく</a></li>
+      <li><a href="#skills">できること</a></li>
+      <li><a href="#products">つくったもの</a></li>
+      <li><a href="#contact">れんらくさき</a></li>
+    </ul>
+  </nav>
+  <div class="contents">
+    <section class="description">
+      <img src="face_icon.png" alt="kiriminの顔">
+      <p>きりみんは、主にAndroidアプリの開発をしているフリーのプログラマです。</p>
+      <p>絵を描いたりもします。</p>
+      <p>I'm a Android application engineer in Japan.</p>
+    </section>
+
+    <section class="recent">
+      <div class="blog">
+        <h2>ブログ</h2>
+        <ul class="feed" />
+      </div>
+      <div class="twitter">
+        <a class="twitter-timeline" href="https://twitter.com/kirimin" data-widget-id="728513459151736832">ツイッター</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </section>
+
+    <section class="links" id="links">
+      <h1>りんく</h1>
+      <p>各サービスアカウントへのリンクです。</p>
+      <ul>
+        <li><a href="http://kirimin.hatenablog.com/">Blog</a></li>
+        <li><a href="https://twitter.com/kirimin">Twitter</a></li>
+        <li><a href="https://github.com/kirimin">GitHub</a></li>
+        <li><a href="https://play.google.com/store/apps/developer?id=kirimin">Google Play</a></li>
+        <li><a href="https://speakerdeck.com/kirimin">SpeakerDeck</a></li>
+      </ul>
+    </section>
+    <section class="skills" id="skills">
+      <h1>できること</h1>
+      <p>得意な技術です。</p>
+      <p><span class="stars">★★★</span>=得意,　<span class="stars">★★☆</span>=できる,　<span class="stars">★☆☆</span>=ちょっと知ってる</p>
+      <h2>Languages</h2>
+      <ul>
+        <li><div>Java</div><div class="stars">★★★</div></li>
+        <li><div>Kotlin</div><div class="stars">★★★</div></li>
+        <li><div>Swift</div><div class="stars">★★☆</div></li>
+        <li><div>Scala</div><div class="stars">★☆☆</div></li>
+        <li><div>HTML,CSS</div><div class="stars">★★☆</div></li>
+        <li><div>JavaScript</div><div class="stars">★☆☆</div></li>
+      </ul>
+
+      <h2>Platforms</h2>
+      <ul>
+        <li><div>Android</div><div class="stars">★★★</div></li>
+        <li><div>iOS</div><div class="stars">★☆☆</div></li>
+        <li><div>front-end</div><div class="stars">★☆☆</div></li>
+        <li><div>server-side</div><div class="stars">★☆☆</div></li>
+      </ul>
+    </section>
+
+    <section class="products" id="products">
+      <h1>つくったもの</h1>
+      <h2>Android</h2>
+      <ul>
+        <li><a href="https://play.google.com/store/apps/details?id=me.kirimin.mitsumine"><img src="app_icons/mitsumine_header.png" alt="mitsumine"></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=me.kirimin.itsapdf"><img src="app_icons/itsapdf_header.png" alt="pdf download blocker"></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=me.kirimin.graphmaker"><img src="app_icons/graph_header.png" alt="graph maker"></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=me.kirimin.kumin"><img src="app_icons/kumin_header.png" alt="kumin"></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=me.kirimin.yencounterapp"><img src="app_icons/yen_header.png" alt="yen counter"></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=me.kirimin.remclock"><img src="app_icons/clock_header.png" alt="mou neru"></a></li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1>れんらくさき</h1>
+      <p>Reply to @kirimin on Twitter</p>
+      <p>or email to [cc at kirimin.me]</p>
+    </section>
+</body>
+=======
+
+<head>
+    <title>きりみん.me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta content="きりみん.me" name="title">
+    <meta content="きりみんは、主にAndroidアプリの開発をしているフリーのプログラマです。" name="description">
+    <meta content='きりみん,kirimin' name='keywords'>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="きりみん.me" />
+    <meta property="og:description" content="きりみんは、主にAndroidアプリの開発をしているフリーのプログラマです。" />
+    <meta property="og:url" content="http://kirimin.me" />
+    <meta property="og:site_name" content="kirimin.me" />
+
+    <link rel="stylesheet" href="kirimin.css">
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+
+    <script src="js/kirimin.js"></script>
+    <script src="js/kirimin.feed.js"></script>
+    <script>
+        $(function() {
+            kirimin.initModule();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">きりみん.me</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">とっぷ</a></li>
+            <li><a href="#links">りんく</a></li>
+            <li><a href="#skills">できること</a></li>
+            <li><a href="#products">つくったもの</a></li>
+            <li><a href="#contact">れんらくさき</a></li>
+        </ul>
+    </nav>
+    <div class="contents">
+        <section class="description">
+            <img src="face_icon.png" alt="kiriminの顔">
+            <p>きりみんは、主にAndroidアプリの開発をしているフリーのプログラマです。</p>
+            <p>絵を描いたりもします。</p>
+            <p>I'm a Android application engineer in Japan.</p>
+        </section>
+
+        <section class="recent">
+            <div class="blog">
+                <h2>ブログ</h2>
+                <ul class="feed" />
+            </div>
+            <div class="twitter">
+                <a class="twitter-timeline" href="https://twitter.com/kirimin" data-widget-id="728513459151736832">ツイッター</a>
+                <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                </script>
+            </div>
+        </section>
+
+        <section class="links" id="links">
+            <h1>りんく</h1>
+            <p>各サービスアカウントへのリンクです。</p>
+            <ul>
+                <li><a href="http://kirimin.hatenablog.com/">Blog</a></li>
+                <li><a href="https://twitter.com/kirimin">Twitter</a></li>
+                <li><a href="https://github.com/kirimin">GitHub</a></li>
+                <li><a href="https://play.google.com/store/apps/developer?id=kirimin">Google Play</a></li>
+                <li><a href="https://speakerdeck.com/kirimin">SpeakerDeck</a></li>
+            </ul>
+        </section>
+        <section class="skills" id="skills">
+            <h1>できること</h1>
+            <p>得意な技術です。</p>
+            <p><span class="stars">★★★</span>=得意,　<span class="stars">★★☆</span>=できる,　<span class="stars">★☆☆</span>=ちょっと知ってる</p>
+            <h2>Languages</h2>
+            <ul>
+                <li>
+                    <div>Java</div>
+                    <div class="stars">★★★</div>
+                </li>
+                <li>
+                    <div>Kotlin</div>
+                    <div class="stars">★★★</div>
+                </li>
+                <li>
+                    <div>Swift</div>
+                    <div class="stars">★★☆</div>
+                </li>
+                <li>
+                    <div>Scala</div>
+                    <div class="stars">★☆☆</div>
+                </li>
+                <li>
+                    <div>HTML,CSS</div>
+                    <div class="stars">★★☆</div>
+                </li>
+                <li>
+                    <div>JavaScript</div>
+                    <div class="stars">★☆☆</div>
+                </li>
+            </ul>
+
+            <h2>Platforms</h2>
+            <ul>
+                <li>
+                    <div>Android</div>
+                    <div class="stars">★★★</div>
+                </li>
+                <li>
+                    <div>iOS</div>
+                    <div class="stars">★☆☆</div>
+                </li>
+                <li>
+                    <div>front-end</div>
+                    <div class="stars">★☆☆</div>
+                </li>
+                <li>
+                    <div>server-side</div>
+                    <div class="stars">★☆☆</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="products" id="products">
+            <h1>つくったもの</h1>
+            <h2>Android</h2>
+            <ul>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.mitsumine"><img src="app_icons/mitsumine_header.png" alt="mitsumine"></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.itsapdf"><img src="app_icons/itsapdf_header.png" alt="pdf download blocker"></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.graphmaker"><img src="app_icons/graph_header.png" alt="graph maker"></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.kumin"><img src="app_icons/kumin_header.png" alt="kumin"></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.yencounterapp"><img src="app_icons/yen_header.png" alt="yen counter"></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.remclock"><img src="app_icons/clock_header.png" alt="mou neru"></a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1>れんらくさき</h1>
+            <p>Reply to @kirimin on Twitter</p>
+            <p>or email to [cc at kirimin.me]</p>
+        </section>
+</body>
+
+>>>>>>> 9589cf97cf86230023cb085ec60edd3290a38424
+</html>

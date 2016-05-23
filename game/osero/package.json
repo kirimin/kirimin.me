@@ -1,0 +1,15 @@
+{
+  "name": "osero",
+  "version": "0.0.0",
+  "description": "osero game",
+  "main": "main.js",
+  "scripts": {
+    "build": "browserify ./src/js/main.js > ./bundle/js/main.js",
+    "watch": "watchify ./src/js/main.js -o ./bundle/js/main.js -v"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "~2.2.3"
+  }
+}

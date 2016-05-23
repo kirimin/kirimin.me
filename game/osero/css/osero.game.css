@@ -1,0 +1,58 @@
+.board_table {
+  margin-bottom: 20px;
+}
+
+.board td {
+    background-color: green;
+    font-size: 30px;
+}
+.board td span {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    margin: 0.25em;
+}
+.board .white {
+    background-color: white;
+}
+.board .black {
+    background-color: black;
+}
+.main .current_player {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.main .return_menu {
+    display: block;
+    padding: 15px 15px;
+    margin-bottom: 25px;
+    margin-right: 100px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #888;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #888;
+    cursor: pointer;
+}
+
+.main .return_menu:hover {
+    background-color: #CCC;
+}
+
+@media (max-width: 699px) {
+  .board td {
+    font-size: 4vw;
+  }
+
+  .main .current_player {
+    font-size: 20px;
+  }
+
+  .main .return_menu {
+    font-size: 15px;
+  }
+}
