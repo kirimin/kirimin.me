@@ -208,25 +208,50 @@ nav li a:hover {
 .stars {
     color: #03A9F4
 }
-.products ul {
+.products_android {
+  margin-bottom: 20px;
+}
+.products_android ul {
     list-style: none;
 }
-.products:after {
+.products_android:after {
     content: "";
     display: block;
     clear: both;
 }
-.products li {
+.products_android li {
     float: left;
     width: 50%;
 }
-.products a:hover img {
+.products_android a:hover img {
     opacity: .5;
 }
-.products img {
+.products_android img {
     width: 100%;
     opacity: 1;
 }
+
+.products_web ul {
+  list-style: none;
+}
+
+.products_web li a {
+    display: block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #888;
+    background-color: #03A9F4;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.products_web li a:hover {
+    background-color: #B3E5FC
+}
+
 .contact {
     margin-bottom: 50px
 }
