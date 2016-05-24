@@ -14,6 +14,7 @@
     <meta property="og:url" content="http://kirimin.me" />
     <meta property="og:site_name" content="kirimin.me" />
 
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="kirimin.css">
 
     <script src="js/jquery-2.0.3.min.js"></script>
@@ -51,7 +52,7 @@
 
         <section class="recent">
             <div class="blog">
-                <h2>ブログ</h2>
+                <h2>最近のエントリ</h2>
                 <ul class="feed" />
             </div>
             <div class="twitter">
@@ -75,17 +76,19 @@
             <h1>りんく</h1>
             <p>各サービスアカウントへのリンクです。</p>
             <ul>
-                <li><a href="http://kirimin.hatenablog.com/">Blog</a></li>
-                <li><a href="https://twitter.com/kirimin">Twitter</a></li>
-                <li><a href="https://github.com/kirimin">GitHub</a></li>
-                <li><a href="https://play.google.com/store/apps/developer?id=kirimin">Google Play</a></li>
-                <li><a href="https://speakerdeck.com/kirimin">SpeakerDeck</a></li>
+                <li><a href="http://kirimin.hatenablog.com/"><i class="fa fa-pencil" aria-hidden="true"></i>Blog</a></li>
+                <li><a href="https://twitter.com/kirimin"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                <li><a href="https://github.com/kirimin"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
+                <li><a href="https://play.google.com/store/apps/developer?id=kirimin"><i class="fa fa-android" aria-hidden="true"></i>Google Play</a></li>
+                <li><a href="https://speakerdeck.com/kirimin"><i class="fa fa-list-alt" aria-hidden="true"></i>SpeakerDeck</a></li>
             </ul>
         </section>
         <section class="skills" id="skills">
             <h1>できること</h1>
-            <p>得意な技術です。</p>
-            <p><span class="stars">★★★</span>=得意,　<span class="stars">★★☆</span>=できる,　<span class="stars">★☆☆</span>=ちょっと知ってる</p>
+            <div class="skills_text">
+              <p>得意な技術です。</p>
+              <p><span class="stars">★★★</span>=得意,　<span class="stars">★★☆</span>=できる,　<span class="stars">★☆☆</span>=ちょっと知ってる</p>
+            </div>
             <h2>Languages</h2>
             <ul>
                 <li>
@@ -110,7 +113,7 @@
                 </li>
                 <li>
                     <div>JavaScript</div>
-                    <div class="stars">★☆☆</div>
+                    <div class="stars">★★☆</div>
                 </li>
             </ul>
 
@@ -126,7 +129,7 @@
                 </li>
                 <li>
                     <div>front-end</div>
-                    <div class="stars">★☆☆</div>
+                    <div class="stars">★★☆</div>
                 </li>
                 <li>
                     <div>server-side</div>
@@ -137,27 +140,37 @@
 
         <section class="products" id="products">
             <h1>つくったもの</h1>
-            <h2>Android</h2>
-            <ul>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.mitsumine"><img src="app_icons/mitsumine_header.png" alt="mitsumine"></a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.itsapdf"><img src="app_icons/itsapdf_header.png" alt="pdf download blocker"></a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.graphmaker"><img src="app_icons/graph_header.png" alt="graph maker"></a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.kumin"><img src="app_icons/kumin_header.png" alt="kumin"></a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.yencounterapp"><img src="app_icons/yen_header.png" alt="yen counter"></a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=me.kirimin.remclock"><img src="app_icons/clock_header.png" alt="mou neru"></a>
-                </li>
-            </ul>
+            <div class="products_android">
+              <h2>Android</h2>
+              <ul>
+                  <li>
+                      <a href="https://play.google.com/store/apps/details?id=me.kirimin.mitsumine"><img src="app_icons/mitsumine_header.png" alt="mitsumine"></a>
+                  </li>
+                  <li>
+                      <a href="https://play.google.com/store/apps/details?id=me.kirimin.itsapdf"><img src="app_icons/itsapdf_header.png" alt="pdf download blocker"></a>
+                  </li>
+                  <li>
+                      <a href="https://play.google.com/store/apps/details?id=me.kirimin.graphmaker"><img src="app_icons/graph_header.png" alt="graph maker"></a>
+                  </li>
+                  <li>
+                      <a href="https://play.google.com/store/apps/details?id=me.kirimin.kumin"><img src="app_icons/kumin_header.png" alt="kumin"></a>
+                  </li>
+                  <li>
+                      <a href="https://play.google.com/store/apps/details?id=me.kirimin.yencounterapp"><img src="app_icons/yen_header.png" alt="yen counter"></a>
+                  </li>
+                  <li>
+                      <a href="https://play.google.com/store/apps/details?id=me.kirimin.remclock"><img src="app_icons/clock_header.png" alt="mou neru"></a>
+                  </li>
+              </ul>
+            </div>
+
+            <div class="products_web">
+              <h2>Webアプリ</h2>
+              <ul>
+                <li><a href="http://kirimin.me/game/osero">練習で作ったオセロゲーム</a></li>
+              </ul>
+            </div>
+
         </section>
 
         <section class="contact" id="contact">
@@ -165,4 +178,5 @@
             <p>Reply to @kirimin on Twitter</p>
             <p>or email to [cc at kirimin.me]</p>
         </section>
+      </div>
 </body>
