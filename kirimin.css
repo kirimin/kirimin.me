@@ -1,10 +1,45 @@
+/** Begin reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol, ul, dl {
+    list-style-position: inside;
+}
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+input, textarea, .spa-x-user-select {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/** End reset */
+
 html {
     height: 100%;
 }
 body {
     height: 100%;
     font-family: 'Helvetica', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
-    margin: 0;
 }
 header {
     background-color: #03A9F4;
@@ -12,7 +47,6 @@ header {
 header h1 {
     font-size: 30px;
     font-weight: normal;
-    margin: 0;
     padding: 15px 15px;
 }
 header h1 a {
@@ -23,8 +57,6 @@ nav {
     border-bottom: dotted 1px #03A9F4;
 }
 nav ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 nav ul:after {
@@ -50,23 +82,25 @@ nav li a:hover {
     padding: 10px 15px;
     height: 100%
 }
+.contents section {
+  margin-bottom: 50px;
+}
 .contents h1 {
     color: #ff80ab;
     font-size: 28px;
-    margin: 0;
-    padding: 0
+    margin-bottom: 10px;
 }
 .contents h2 {
     font-size: 20px;
-    margin: 0;
-    padding: 10px 0
+    margin-bottom: 10px;
 }
+.contents p {
+  line-height: 1.5em;
+}
+
 .description {
     margin-top: 30px;
     margin-bottom: 60px
-}
-.description p {
-    margin: 0;
 }
 .description img {
     width: 200px;
@@ -77,9 +111,6 @@ nav li a:hover {
     content: "";
     display: block;
     clear: both;
-}
-.recent {
-    margin-bottom: 50px
 }
 .recent:after {
     content: "";
@@ -93,12 +124,8 @@ nav li a:hover {
 }
 .blog h2 {
     font-weight: normal;
-    padding-top: 0;
-    padding-bottom: 15px
 }
 .blog ul {
-    margin: 0;
-    padding: 0;
     list-style-type: none;
 }
 .blog li a {
@@ -125,17 +152,10 @@ nav li a:hover {
     float: right;
     width: 40%;
 }
-.links {
-    margin-bottom: 50px
-}
 .links p {
-    margin-top: 0;
     margin-bottom: 20px;
-    padding: 2px 0
 }
 .links ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 .links:after {
@@ -162,20 +182,12 @@ nav li a:hover {
 .links li a:hover {
     background-color: #B3E5FC
 }
-.skills {
-    margin-bottom: 10px
-}
-.skills p {
-    margin: 0;
-    padding: 2px 0
-}
-.skills h2 {
-    margin-top: 20px
+.skills_text {
+    margin-bottom: 15px;
 }
 .skills ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
+    margin-bottom: 15px;
 }
 .skills ul:after {
     content: "";
@@ -186,21 +198,12 @@ nav li a:hover {
     float: left;
     width: 33.3333%;
     font-size: 18px;
-    padding-bottom: 20px
-}
-.skills div {
-    display: block;
-    padding-bottom: 5px
+    margin-bottom: 5px
 }
 .stars {
     color: #03A9F4
 }
-.products {
-    margin-bottom: 50px
-}
 .products ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 .products:after {
@@ -211,31 +214,25 @@ nav li a:hover {
 .products li {
     float: left;
     width: 50%;
-    padding: 0
 }
 .products a:hover img {
     opacity: .5;
 }
 .products img {
     width: 100%;
-    padding: 0;
-    margin: 0;
     opacity: 1;
 }
 .contact {
     margin-bottom: 50px
 }
-.contact h1 {
-    margin-bottom: 0;
-}
 .contact p {
-    margin: 0;
     padding: 2px 0;
 }
 @media (max-width: 519px) {
     header h1 {
         font-size: 26px;
-        padding: 10px 0;
+        padding-left: 0;
+        padding-right: 0;
         text-align: center
     }
     nav li a {
@@ -266,9 +263,9 @@ nav li a:hover {
         display: none;
     }
 }
-@media (min-width: 830px) {
+@media (min-width: 930px) {
     header h1, nav ul, .contents {
-        width: 800px;
+        width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
