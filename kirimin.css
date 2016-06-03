@@ -52,37 +52,31 @@ header h1 a {
     color: #ffffff;
     text-decoration: none;
 }
-nav {
-  display: none;
+.description img {
+    width: 150px;
+    height: 150px;
+    margin-right: 0px;
+    margin-left: 10px;
+    border-radius: 75px;
+    box-shadow: 2px 2px 3px #666;
+    margin-top: -50px;
+    float: right;
 }
-
-nav ul {
-    list-style: none;
-}
-nav ul:after {
+.description:after {
     content: "";
     display: block;
     clear: both;
 }
-nav li {
-    float: left;
-    width: auto;
-}
-nav li a {
+.recent:after {
+    content: "";
     display: block;
-    padding: 15px 20px;
-    color: #03A9F4;
-    font-size: 16px;
-    text-decoration: none;
-}
-nav li a:hover {
-    background-color: #B3E5FC
+    clear: both;
 }
 .contents {
     padding: 10px 15px;
 }
 .contents section {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 .contents h1 {
     color: #ff80ab;
@@ -96,27 +90,14 @@ nav li a:hover {
     margin-bottom: 10px;
 }
 .contents p {
-  line-height: 1.5em;
+    line-height: 1.5em;
 }
-
 .description {
+    padding: 10px 15px;
+    padding-bottom: 25px;
     margin-top: 20px;
-    margin-bottom: 50px
-}
-.description img {
-    width: 200px;
-    float: right;
-    margin-top: -30px
-}
-.description:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-.recent:after {
-    content: "";
-    display: block;
-    clear: both;
+    margin-bottom: 50px;
+    color: #fff;
 }
 .blog {
     float: left;
@@ -176,8 +157,8 @@ nav li a:hover {
     text-decoration: none;
 }
 .links i {
-  margin-right: 10px;
-  font-size: 22px;
+    margin-right: 10px;
+    font-size: 22px;
 }
 .links:after {
     content: "";
@@ -209,7 +190,7 @@ nav li a:hover {
     color: #03A9F4
 }
 .products_android {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .products_android ul {
     list-style: none;
@@ -230,16 +211,14 @@ nav li a:hover {
     width: 100%;
     opacity: 1;
 }
-
 .products_web ul {
-  list-style: none;
+    list-style: none;
 }
-
 .products_web li a {
     display: block;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #888;
-    background-color: #03A9F4;
+    background-color: #888;
     padding: 10px 15px;
     margin-bottom: 15px;
     margin-right: 15px;
@@ -247,11 +226,9 @@ nav li a:hover {
     font-size: 18px;
     text-decoration: none;
 }
-
 .products_web li a:hover {
     background-color: #B3E5FC
 }
-
 .contact {
     margin-bottom: 50px
 }
@@ -265,13 +242,9 @@ nav li a:hover {
         padding-right: 0;
         text-align: center
     }
-
-    nav {
-      padding-left: 10px;
-    }
-    nav li a {
-        padding: 15px 5px;
-        font-size: 14px;
+    .description {
+      padding-left: 50px;
+      padding-right: 50px;
     }
     .description p {
         font-size: 14px;
@@ -279,10 +252,14 @@ nav li a:hover {
     }
     .description img {
         display: block;
-        width: 150px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-top: -25px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 15px
+        margin-bottom: 15px;
+        float: none;
     }
     .links li {
         width: 100%;
@@ -298,12 +275,9 @@ nav li a:hover {
     }
 }
 @media (min-width: 930px) {
-    header h1, nav ul, .contents {
+    header h1, header .description, .contents {
         width: 900px;
         margin-left: auto;
         margin-right: auto;
-    }
-    nav ul {
-        padding-right: 30px
     }
 }
