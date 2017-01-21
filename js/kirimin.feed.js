@@ -1,26 +1,20 @@
 kirimin.feed = (function() {
   'use strict';
 
-  google.load("feeds", "1");
-
   var initModule = function($container) {
-    var onLoad = function() {
-      var feed = new google.feeds.Feed("http://kirimin.hatenablog.com/feed");
-      feed.setNumEntries(7);
-      feed.load(function (result){
-        if (result.error){
-          return false;
-        }
+    // using https://developer.yahoo.com/yql/console/
+    $.getJSON("https://query.yahooapis.com/v1/public/yql?callback=?", {
+        q: "select * from rss(7) where url = 'http://kirimin.hatenablog.com/rss'",
+        format: "json"
+    }, function(json) {
+        for (var i = 0; i < json.query.results.item.length; i++) {
+            var entry = json.query.results.item[i];
 
-        for (var i = 0; i < result.feed.entries.length; i++) {
-          var entry = result.feed.entries[i];
-          var title = entry.title.slice(entry.title.lastIndexOf("]")+1);
-          $container.append('<li><a href="'+ entry.link +'">' + title + '<br/><time>' + new Date(entry.publishedDate).toDateString() + '</time></a></li>');
+            var title = entry.title.slice(entry.title.lastIndexOf("]")+1);
+            $container.append('<li><a href="'+ entry.link +'">' + title + '<br/><time>' + new Date(entry.pubDate).toDateString() + '</time></a></li>');
         }
-      });
-    }
-    google.setOnLoadCallback(onLoad);
-  };
+    });
+  }
 
   return {
     initModule: initModule
