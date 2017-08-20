@@ -74,6 +74,12 @@ header h1 a {
 }
 .contents {
     padding: 10px 15px;
+
+    background-image: url(./background.png);
+    background-repeat:no-repeat;
+    background-position:75% bottom;
+    background-attachment: fixed;
+    background-size:300px;
 }
 .contents section {
     margin-bottom: 50px;
