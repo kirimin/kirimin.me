@@ -73,7 +73,7 @@ header h1 a {
     clear: both;
 }
 .contents {
-    padding: 10px 15px;
+    padding: 10px 15px 300px 0;
 
     background-image: url(./background.png);
     background-repeat:no-repeat;
@@ -247,6 +247,11 @@ header h1 a {
         padding-left: 0;
         padding-right: 0;
         text-align: center
+    }
+    .contents {
+      background-position:80% bottom;
+      background-size:150px;
+      padding-bottom: 200px;
     }
     .description {
       padding-left: 50px;
