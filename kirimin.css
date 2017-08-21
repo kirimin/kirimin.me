@@ -77,9 +77,9 @@ header h1 a {
 
     background-image: url(./background.png);
     background-repeat:no-repeat;
-    background-position:75% bottom;
+    background-position:center bottom;
     background-attachment: fixed;
-    background-size:300px;
+    background-size:200px;
 }
 .contents section {
     margin-bottom: 50px;
