@@ -73,7 +73,7 @@ header h1 a {
     clear: both;
 }
 .contents {
-    padding: 10px 15px 300px 0;
+    padding: 10px 15px 300px;
 
     background-image: url(./background.png);
     background-repeat:no-repeat;
