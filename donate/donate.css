@@ -1,0 +1,32 @@
+.toolbar {
+    background-color: #03A9F4;
+    width: 100%;
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 3px #888;
+}
+.toolbar h1, .toolbar a {
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 15px 15px;
+}
+.toolbar a {
+    text-decoration: none;
+    padding: 0;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.crypt_currencies h2 {
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+
+.crypt_currencies h3, p, img {
+  margin-bottom: 8px;
+}
+
+.item {
+  margin-bottom: 16px;
+}
