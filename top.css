@@ -169,6 +169,20 @@
 .contact p {
     padding: 2px 0;
 }
+.crypt_currencies h2 {
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+.crypt_currencies h3, p, img {
+    margin-bottom: 8px;
+}
+.others h2 {
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+.others h3, p, img {
+    margin-bottom: 8px;
+}
 @media (max-width: 519px) {
     .description {
       padding-left: 50px;
