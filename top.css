@@ -1,9 +1,4 @@
 .contents {
-    background-image: url(./background.gif);
-    background-repeat:no-repeat;
-    background-position:center bottom;
-    background-attachment: fixed;
-    background-size:300px;
 }
 
 .description img {
