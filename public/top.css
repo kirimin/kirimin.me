@@ -161,6 +161,10 @@
 .products_web li a:hover {
     background-color: #B3E5FC
 }
+.products_books ul {
+    list-style: none;
+}
+
 .contact {
     margin-bottom: 50px
 }
